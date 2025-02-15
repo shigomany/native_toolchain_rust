@@ -1,10 +1,10 @@
 name: native_toolchain_rust
 description: Library to interact with rustup and cargo when building Dart and Flutter native assets written in Rust.
-version: 0.1.0-dev.8
+version: 0.2.0-dev.0
 homepage: https://github.com/irondash/native_toolchain_rust.git
 
 environment:
-  sdk: ">=3.4.0-190.0.dev <4.0.0"
+  sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
   native_toolchain_rust_common: ^0.1.0-dev.3
