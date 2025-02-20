@@ -250,7 +250,7 @@ class RustBuilder {
         target: target,
       );
       return env.buildEnvironment();
-    } else if (buildInput.config.code.targetOS == OS.iOS) {
+    } else if ({OS.iOS, OS.macOS}.contains(buildInput.config.code.targetOS)) {
       final path = Platform.environment['PATH'] ?? '';
       // XCode injects paths in PATH that breaks host build for crates with build.rs.
       // https://github.com/irondash/native_toolchain_rust/issues/17
