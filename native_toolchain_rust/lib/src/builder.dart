@@ -100,7 +100,7 @@ class RustToolchain {
 }
 
 class RustBuilder {
-  RustBuilder({
+  const RustBuilder({
     required this.package,
     this.toolchain,
     required this.cratePath,
@@ -132,10 +132,7 @@ class RustBuilder {
   /// Path to the Rust crate directory relative to the package root.
   final String cratePath;
 
-  /// Build config provided to the build callback from `native_assets_cli`.
-
-  // final BuildOutputBuilder outputBuilder;
-
+  /// Build input provider from `native_assets_cli`.
   final BuildInput buildInput;
 
   /// Dart build files inside hook directory that should be added as
@@ -183,8 +180,6 @@ class RustBuilder {
     if (useNativeManifest) {
       await toolchain._checkNativeManifest(buildInput: buildInput);
     }
-
-    // final effectiveBuildMode = release ? BuildMode.release : BuildMode.debug;
 
     await toolchain.toolchain.rustup.runCommand(
       [
