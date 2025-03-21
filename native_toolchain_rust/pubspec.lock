@@ -181,10 +181,10 @@ packages:
     dependency: "direct main"
     description:
       name: native_assets_cli
-      sha256: "537e258b4ee782d81344414c722822014c9e5429f2f98a84a0c2e796f71f4798"
+      sha256: bd4cac2c174be1ec0dd86c1bd2b55ffaad6870f7bcf31b2d5d85d0a5fbc40e82
       url: "https://pub.dev"
     source: hosted
-    version: "0.11.0"
+    version: "0.12.0"
   native_toolchain_rust_common:
     dependency: "direct main"
     description:
@@ -440,4 +440,4 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=3.5.0 <4.0.0"
+  dart: ">=3.7.0 <4.0.0"
